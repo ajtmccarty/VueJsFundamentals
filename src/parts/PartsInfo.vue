@@ -16,7 +16,7 @@ export default {
     partType: {
       type: String,
     },
-    partID: {
+    partId: {
       type: [String, Number],
       validator(value) {
         return Number.isInteger(+value);
