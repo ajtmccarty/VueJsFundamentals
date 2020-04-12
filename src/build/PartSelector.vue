@@ -42,6 +42,10 @@ export default {
       return this.parts[this.selectedPartIndex];
     },
   },
+  beforeMount() {
+    // run this to update any listeners with default part
+    this.emitSelectedPart();
+  },
   updated() {
     this.emitSelectedPart();
   },
