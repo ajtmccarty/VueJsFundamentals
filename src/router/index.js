@@ -23,6 +23,7 @@ export default new Router({
       path: '/parts/:partType/:partId',
       name: 'Parts',
       component: PartsInfo,
+      props: true,
     },
   ],
 });
