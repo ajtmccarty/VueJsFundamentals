@@ -15,7 +15,7 @@ export default new Router({
     },
     {
       path: '/build',
-      name: 'Buile',
+      name: 'Build',
       component: RobotBuilder,
     },
   ],
