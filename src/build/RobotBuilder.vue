@@ -106,7 +106,9 @@ export default {
         + robot.rightArm.cost
         + robot.base.cost
       );
-      this.$store.dispatch('addRobotToCart', { ...robot, cost });
+      // add Robot to Cart in store and redirect to Cart page once complete
+      this.$store.dispatch('addRobotToCart', { ...robot, cost })
+        .then(() => this.$router.push({ name: 'Cart' }));
       this.addedToCart = true;
     },
   },
